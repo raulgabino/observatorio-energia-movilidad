@@ -115,6 +115,7 @@ table.reg-table{width:100%;border-collapse:collapse;font-size:13px}
 .badge-reforma{background:#EDE9FE;color:#6D28D9}
 .badge-punto{background:#E0F7FA;color:#0E7490}
 .badge-dictamen{background:#FCE4EC;color:#BE185D}
+.badge-minuta{background:#FFF8E1;color:#F57F17}
 .badge-aprobada{background:#D1FAE5;color:#065F46}
 .badge-en-comision{background:#FEF3C7;color:#92400E}
 .badge-presentada{background:#DBEAFE;color:#1E40AF}
@@ -233,7 +234,7 @@ footer a:hover{text-decoration:underline}
     </div>
     <div class="hero-aside">
       <div class="hero-stat">
-        <div class="hero-stat-num">133</div>
+        <div class="hero-stat-num">193</div>
         <div class="hero-stat-label">Documentos legislativos</div>
       </div>
       <div class="hero-stat">
@@ -241,7 +242,7 @@ footer a:hover{text-decoration:underline}
         <div class="hero-stat-label">Macrotemas: Energía y Movilidad</div>
       </div>
       <div class="hero-stat">
-        <div class="hero-stat-num" style="font-size:24px">Oct 2024 — Mar 2026</div>
+        <div class="hero-stat-num" style="font-size:24px">Mar 2005 — Mar 2026</div>
         <div class="hero-stat-label">Período cubierto</div>
       </div>
     </div>
@@ -252,23 +253,23 @@ footer a:hover{text-decoration:underline}
 <section class="indicators" id="indicadores">
   <div class="indicators-inner">
     <div class="indicator">
-      <div class="indicator-num">133</div>
+      <div class="indicator-num">193</div>
       <div class="indicator-label">Documentos</div>
     </div>
     <div class="indicator">
-      <div class="indicator-num energia">36</div>
+      <div class="indicator-num energia">64</div>
       <div class="indicator-label">Energía</div>
     </div>
     <div class="indicator">
-      <div class="indicator-num movilidad">97</div>
+      <div class="indicator-num movilidad">129</div>
       <div class="indicator-label">Movilidad</div>
     </div>
     <div class="indicator">
-      <div class="indicator-num">37</div>
+      <div class="indicator-num">147</div>
       <div class="indicator-label">Aprobados</div>
     </div>
     <div class="indicator">
-      <div class="indicator-num">10</div>
+      <div class="indicator-num">6</div>
       <div class="indicator-label">Subtemas</div>
     </div>
   </div>
@@ -288,7 +289,7 @@ footer a:hover{text-decoration:underline}
     </div>
     <div class="chart-card">
       <div class="chart-title">Tipo de acto legislativo</div>
-      <div class="chart-subtitle">Distribución de los 133 documentos</div>
+      <div class="chart-subtitle">Distribución de los 193 documentos</div>
       <div class="chart-wrap" style="max-width:320px;margin:0 auto"><canvas id="chartTipo"></canvas></div>
     </div>
     <div class="chart-card">
@@ -308,7 +309,7 @@ footer a:hover{text-decoration:underline}
 <section class="section" id="registro">
   <div class="section-header">
     <h2 class="section-title">Registro legislativo</h2>
-    <p class="section-desc">Explora los 133 documentos clasificados</p>
+    <p class="section-desc">Explora los 193 documentos clasificados</p>
   </div>
 
   <button class="filter-toggle-btn" onclick="document.querySelector('.filters-bar').classList.toggle('open')">
@@ -340,6 +341,7 @@ footer a:hover{text-decoration:underline}
         <option>Reforma legislativa</option>
         <option>Punto de Acuerdo</option>
         <option>Dictamen</option>
+        <option>Minuta</option>
       </select>
     </div>
     <div class="filter-group">
@@ -396,7 +398,7 @@ footer a:hover{text-decoration:underline}
     </ul>
 
     <h3>Criterios de clasificación</h3>
-    <p>Cada documento fue clasificado por macrotema (Energía o Movilidad), subtema específico, tipo de acto legislativo (Reforma legislativa, Punto de Acuerdo o Dictamen) y estatus procesal. La clasificación se realizó a partir del epígrafe disponible en el portal.</p>
+    <p>Cada documento fue clasificado por macrotema (Energía o Movilidad), subtema específico, tipo de acto legislativo (Reforma legislativa, Punto de Acuerdo, Dictamen o Minuta) y estatus procesal. La clasificación se realizó a partir del epígrafe disponible en el portal.</p>
 
     <h3>Limitaciones</h3>
     <ul>
@@ -407,7 +409,7 @@ footer a:hover{text-decoration:underline}
     </ul>
 
     <h3>Última actualización</h3>
-    <p>Marzo 2026. Datos correspondientes al período octubre 2024 – marzo 2026.</p>
+    <p>Abril 2026. Datos correspondientes al período marzo 2005 – marzo 2026.</p>
   </div>
 </section>
 
@@ -426,7 +428,7 @@ function slugify(s){return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u0
 function badgeClass(type,val){
   const map={
     macrotema:{Energía:'badge-energia',Movilidad:'badge-movilidad'},
-    tipo_acto:{'Reforma legislativa':'badge-reforma','Punto de Acuerdo':'badge-punto',Dictamen:'badge-dictamen'},
+    tipo_acto:{'Reforma legislativa':'badge-reforma','Punto de Acuerdo':'badge-punto',Dictamen:'badge-dictamen',Minuta:'badge-minuta'},
     estatus:{Aprobada:'badge-aprobada','En comisión':'badge-en-comision',Presentada:'badge-presentada',Estancada:'badge-estancada'}
   };
   return(map[type]&&map[type][val])||'';
@@ -473,19 +475,19 @@ Chart.defaults.plugins.legend.display=false;
   DATA.forEach(d=>{counts[d.tipo_acto]=(counts[d.tipo_acto]||0)+1});
   const labels=Object.keys(counts);
   const values=Object.values(counts);
-  const colors=['#6D28D9','#0891B2','#BE185D'];
+  const colors=['#6D28D9','#0891B2','#BE185D','#F57F17'];
   const chart=new Chart(document.getElementById('chartTipo'),{
     type:'doughnut',
     data:{labels,datasets:[{data:values,backgroundColor:colors,borderWidth:0,hoverOffset:6}]},
     options:{responsive:true,cutout:'62%',
       plugins:{legend:{display:true,position:'bottom',labels:{padding:16,usePointStyle:true,pointStyle:'circle'}},
-        tooltip:{callbacks:{label:ctx=>ctx.label+': '+ctx.raw+' ('+Math.round(ctx.raw/133*100)+'%)'}}}}
+        tooltip:{callbacks:{label:ctx=>ctx.label+': '+ctx.raw+' ('+Math.round(ctx.raw/193*100)+'%)'}}}}
   });
   // Center label plugin
   const centerPlugin={id:'centerText',afterDraw(chart){
     const{ctx,chartArea:{width,height,top,left}}=chart;
     ctx.save();ctx.font='700 28px "Space Grotesk",sans-serif';ctx.fillStyle='#1A1A2E';ctx.textAlign='center';ctx.textBaseline='middle';
-    ctx.fillText('133',left+width/2,top+height/2-8);
+    ctx.fillText('193',left+width/2,top+height/2-8);
     ctx.font='400 11px "Inter",sans-serif';ctx.fillStyle='#9CA3AF';
     ctx.fillText('documentos',left+width/2,top+height/2+14);
     ctx.restore();
