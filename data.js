@@ -9528,7 +9528,154 @@ const DATA_QRO = [
   }
 ];
 
-const DATA_ALL = [].concat(DATA_TAM,DATA_NL,DATA_COAH,DATA_CHIH,DATA_SON,DATA_VER,DATA_CHP,DATA_JAL,DATA_MEX,DATA_COL,DATA_DUR,DATA_MICH,DATA_PUE,DATA_QRO);
+const DATA_CAM = [
+  {
+    "id": "CAM-2024-001",
+    "fecha": "2024-10-09",
+    "tipo_acto": "Dictamen",
+    "estatus": "Aprobado",
+    "macrotema": "Energía",
+    "subtema": "ENE_TAR",
+    "subtema_secundario": "",
+    "extracto": "Exhorto a la CFE y a la Secretaría de Energía del Gobierno Federal para garantizar el suministro de energía eléctrica en toda la entidad y atender de manera urgente las interrupciones y afectaciones en el servicio.",
+    "resumen": "",
+    "link_documento": "https://www.congresocam.gob.mx/wp-content/uploads/adjuntos_sitio/PL/LXV/DICTAMENES/D_PA002LXV1024.pdf",
+    "link_portal": "",
+    "fuente_verificada": "Sí",
+    "notas": "Estatus portal: Aprobado | Término búsqueda: energía | Expediente: PA/002/LXV/10/24 | Dictamen: D_PA002LXV1024.pdf | Promovente: GP Movimiento Ciudadano (Fernández Montúfar y otros)",
+    "estado": "Campeche"
+  },
+  {
+    "id": "CAM-2024-002",
+    "fecha": "2024-10-18",
+    "tipo_acto": "Minuta",
+    "estatus": "Aprobado",
+    "macrotema": "Movilidad",
+    "subtema": "MOV_TP",
+    "subtema_secundario": "",
+    "extracto": "Minuta remitida por la Cámara de Senadores para reformar el artículo 28 de la Constitución Política de los Estados Unidos Mexicanos a fin de que el Estado retome el control de las vías ferroviarias para la prestación del servicio de pasajeros.",
+    "resumen": "",
+    "link_documento": "https://www.congresocam.gob.mx/quinta-sesion-ordinaria-4/",
+    "link_portal": "",
+    "fuente_verificada": "No",
+    "notas": "Estatus portal: Aprobado | Término búsqueda: transporte | Sin número de expediente identificado en fuente directa | Fuente: resumen sesión Quinta Sesión Ordinaria 18/10/2024",
+    "estado": "Campeche"
+  },
+  {
+    "id": "CAM-2025-003",
+    "fecha": "2025-05-06",
+    "tipo_acto": "Punto de Acuerdo",
+    "estatus": "Turnada a comisiones",
+    "macrotema": "Energía",
+    "subtema": "ENE_TAR",
+    "subtema_secundario": "",
+    "extracto": "Propuesta para la creación de la Comisión Especial para la Defensa de los Derechos de las Personas Usuarias del Servicio Eléctrico en el Estado de Campeche en el seno de la LXV Legislatura.",
+    "resumen": "",
+    "link_documento": "https://www.congresocam.gob.mx/wp-content/uploads/adjuntos_sitio/SG/LXV/Gacetas/01_PRIMER_ANO_EJERCICIO/005_TERCER_PERIODO_ORDINARIO/043_GACETA_06MAYO2025.pdf",
+    "link_portal": "",
+    "fuente_verificada": "No",
+    "notas": "Estatus portal: Turnada a comisiones | Término búsqueda: energía | Fuente: Gaceta Parlamentaria No. 43 (06/05/2025) | Nota: propuesta de organización interna del Congreso; sin expediente identificado en portal de iniciativas",
+    "estado": "Campeche"
+  },
+  {
+    "id": "CAM-2025-004",
+    "fecha": "2025-05-13",
+    "tipo_acto": "Reforma legislativa",
+    "estatus": "Aprobado — Decreto 86",
+    "macrotema": "Movilidad",
+    "subtema": "MOV_ACT",
+    "subtema_secundario": "",
+    "extracto": "Reforma a la fracción XXXVII del artículo 2 de la Ley de Movilidad y Seguridad Vial del Estado de Campeche. Modifica la definición de 'Personas de movilidad limitada' para incluir a quienes temporal o permanentemente presentan dificultad de desplazamiento por enfermedad, edad, accidente u otra condición diversa a la discapacidad.",
+    "resumen": "",
+    "link_documento": "https://periodicooficial.campeche.gob.mx/",
+    "link_portal": "",
+    "fuente_verificada": "No",
+    "notas": "Estatus portal: Aprobado — P.O.E. No. 2406 Tercera Sección 13/05/2025 | Término búsqueda: movilidad | Decreto número 86 | Texto de Fracción XXXVII verificado en versión consolidada (municipiocampeche.gob.mx)",
+    "estado": "Campeche"
+  },
+  {
+    "id": "CAM-2025-005",
+    "fecha": "2025-06-03",
+    "tipo_acto": "Punto de Acuerdo",
+    "estatus": "Turnada a comisiones",
+    "macrotema": "Movilidad",
+    "subtema": "MOV_SEG",
+    "subtema_secundario": "",
+    "extracto": "Punto de Acuerdo para exhortar a SEDATU, SCT, Secretaría de Desarrollo Urbano Movilidad y Obras Públicas del Estado, y ayuntamientos de Champotón y Seybaplaya, a adoptar acciones necesarias para eliminar riesgos de seguridad vial en las inmediaciones del Jardín de Niños 'Lic. José Vasconcelos', la Primaria 'La Ciudad del Sol' y la Secundaria Técnica No. 19 en Champotón.",
+    "resumen": "",
+    "link_documento": "https://www.congresocam.gob.mx/wp-content/uploads/adjuntos_sitio/PL/LXV/PUNTOS_DE_ACUERDO/PA065LXV0625.pdf",
+    "link_portal": "",
+    "fuente_verificada": "Sí",
+    "notas": "Estatus portal: Turnada a comisiones | Término búsqueda: vialidad | Expediente: PA/065/LXV/06/25 | Promovente: Dip. Gladys Sofía Rivera López (Morena)",
+    "estado": "Campeche"
+  },
+  {
+    "id": "CAM-2025-006",
+    "fecha": "2025-06-19",
+    "tipo_acto": "Punto de Acuerdo",
+    "estatus": "Turnada a comisiones",
+    "macrotema": "Movilidad",
+    "subtema": "MOV_SEG",
+    "subtema_secundario": "",
+    "extracto": "Punto de Acuerdo para solicitar a los trece honorables ayuntamientos del Estado de Campeche la implementación de campañas permanentes y el fomento de la participación ciudadana en políticas de movilidad segura para motociclistas.",
+    "resumen": "",
+    "link_documento": "https://www.congresocam.gob.mx/wp-content/uploads/adjuntos_sitio/PL/LXV/PUNTOS_DE_ACUERDO/PA079LXV0625.pdf",
+    "link_portal": "",
+    "fuente_verificada": "Sí",
+    "notas": "Estatus portal: Turnada a comisiones | Término búsqueda: movilidad | Expediente: PA/079/LXV/06/25 | Promovente: Dip. Gladys Sofía Rivera López (Morena)",
+    "estado": "Campeche"
+  },
+  {
+    "id": "CAM-2025-007",
+    "fecha": "2025-10-14",
+    "tipo_acto": "Reforma legislativa",
+    "estatus": "Turnada a comisiones",
+    "macrotema": "Movilidad",
+    "subtema": "MOV_SEG",
+    "subtema_secundario": "",
+    "extracto": "Iniciativa para reformar la Ley de Vialidad, Tránsito y Control Vehicular del Estado de Campeche a fin de facultar a las autoridades para retirar vehículos abandonados o estacionados por largos períodos en lugares que afecten la movilidad o representen un riesgo para la seguridad de personas, especialmente cerca de escuelas, hospitales o espacios públicos.",
+    "resumen": "",
+    "link_documento": "https://www.congresocam.gob.mx/tercera-sesion-primer-periodo-ordinario/",
+    "link_portal": "",
+    "fuente_verificada": "No",
+    "notas": "Estatus portal: Turnada a comisiones | Término búsqueda: tránsito | Fuente: resumen sesión 14/10/2025 | Sin número de expediente identificado en fuente directa | Subtema corregido: MOV_INF considerado→MOV_SEG (por efecto: remover vehículo que representa riesgo de seguridad, no obra de infraestructura)",
+    "estado": "Campeche"
+  },
+  {
+    "id": "CAM-2025-008",
+    "fecha": "2025-10-14",
+    "tipo_acto": "Reforma legislativa",
+    "estatus": "Aprobado",
+    "macrotema": "Movilidad",
+    "subtema": "MOV_SEG",
+    "subtema_secundario": "",
+    "extracto": "Dictamen aprobado que reforma la Ley de Vialidad, Tránsito y Control Vehicular del Estado de Campeche para precisar la correcta portación y visibilidad de las placas vehiculares: cuando un vehículo no cuente con el espacio destinado por el fabricante, las placas deberán colocarse en lugar visible al exterior garantizando su identificación y contribuyendo a una movilidad más segura y ordenada.",
+    "resumen": "",
+    "link_documento": "https://www.congresocam.gob.mx/tercera-sesion-primer-periodo-ordinario/",
+    "link_portal": "",
+    "fuente_verificada": "No",
+    "notas": "Estatus portal: Aprobado | Término búsqueda: tránsito | Fuente: resumen sesión 14/10/2025 | Sin número de decreto identificado | Promoventes: Dip. Rabelo Cuevas, Pool Alpuche, Abraham Quijano (PRI) | Comisión: Seguridad Pública y Protección a la Comunidad",
+    "estado": "Campeche"
+  },
+  {
+    "id": "CAM-2025-009",
+    "fecha": "2025-11-25",
+    "tipo_acto": "Reforma legislativa",
+    "estatus": "Turnada a comisiones",
+    "macrotema": "Movilidad",
+    "subtema": "MOV_SEG",
+    "subtema_secundario": "MOV_ACT",
+    "extracto": "Iniciativa para reformar diversas disposiciones de la Ley de Movilidad y Seguridad Vial y de la Ley de Vialidad, Tránsito y Control Vehicular del Estado de Campeche; busca actualizar normas, fortalecer la seguridad vial y ordenar el tránsito priorizando a peatones, ciclistas, adultos mayores, estudiantes y usuarios del transporte público diario.",
+    "resumen": "",
+    "link_documento": "https://www.congresocam.gob.mx/novena-sesion-primer-periodo-ordinario/",
+    "link_portal": "",
+    "fuente_verificada": "No",
+    "notas": "Estatus portal: Turnada a comisiones | Término búsqueda: movilidad | Fuente: resumen sesión 25/11/2025 | Sin número de expediente identificado | Promoventes: Dip. José Antonio Jiménez Gutiérrez y Omar Alberto Talango Cervantes (Morena)",
+    "estado": "Campeche"
+  }
+];
+
+const DATA_ALL = [].concat(DATA_TAM,DATA_NL,DATA_COAH,DATA_CHIH,DATA_SON,DATA_VER,DATA_CHP,DATA_JAL,DATA_MEX,DATA_COL,DATA_DUR,DATA_MICH,DATA_PUE,DATA_QRO,DATA_CAM);
 
 const SUBTEMAS = {
   "ENE_GEN": "Generación y transición energética",
@@ -9556,7 +9703,9 @@ const ESTATUS_HOMOLOGADO = {
   "Recibidas en tiempo y forma. Atiende parcialmente las observaciones": "Atendido",
   "Decreto": "Aprobado",
   "Pendiente": "En proceso",
-  "En Trámite": "En proceso"
+  "En Trámite": "En proceso",
+  "Turnada a comisiones": "En proceso",
+  "Aprobado — Decreto 86": "Aprobado"
 };
 
 const ESTADOS = {
@@ -9713,7 +9862,18 @@ const ESTADOS = {
     "color": "#9333EA",
     "color_light": "#F3E8FF",
     "color_dark": "#6B21A8"
+  },
+  "Campeche": {
+    "legislatura": "LXV Legislatura",
+    "periodo": "2024-2027",
+    "periodo_datos": "Oct 2024 — Nov 2025",
+    "portal": "congresocam.gob.mx",
+    "portal_url": "https://www.congresocam.gob.mx",
+    "slug": "campeche",
+    "color": "#0D9488",
+    "color_light": "#CCFBF1",
+    "color_dark": "#115E59"
   }
 };
 
-const ESTADO_NAMES = ["Tamaulipas", "Nuevo León", "Coahuila", "Chihuahua", "Sonora", "Veracruz", "Chiapas", "Jalisco", "Estado de México", "Colima", "Durango", "Michoacán", "Puebla", "Querétaro"];
+const ESTADO_NAMES = ["Tamaulipas", "Nuevo León", "Coahuila", "Chihuahua", "Sonora", "Veracruz", "Chiapas", "Jalisco", "Estado de México", "Colima", "Durango", "Michoacán", "Puebla", "Querétaro", "Campeche"];
