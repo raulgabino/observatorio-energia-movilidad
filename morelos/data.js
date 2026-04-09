@@ -105,3 +105,16 @@ const DATA = [
     "notas": "Estatus portal: Presentado en sesión ordinaria | Término búsqueda: tránsito | Fuente no verificada: portal publica boletín de prensa sin PDF del documento legislativo"
   }
 ];
+
+const SUBTEMAS = {
+  "ENE_GEN": "Generación y transición energética",
+  "ENE_REG": "Marco regulatorio energético",
+  "ENE_TAR": "Tarifas, subsidios y cortes de suministro",
+  "ENE_HC": "Hidrocarburos, gas y combustibles",
+  "ENE_EF": "Eficiencia energética y alumbrado",
+  "MOV_SEG": "Seguridad vial",
+  "MOV_INF": "Infraestructura vial",
+  "MOV_ACT": "Movilidad activa",
+  "MOV_TP": "Transporte público y concesiones",
+  "MOV_ELEC": "Electromovilidad y vehículos eléctricos"
+};
