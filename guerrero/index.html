@@ -254,23 +254,23 @@ footer a:hover{text-decoration:underline}
 <section class="indicators" id="indicadores">
   <div class="indicators-inner">
     <div class="indicator">
-      <div class="indicator-num">10</div>
+      <div class="indicator-num">15</div>
       <div class="indicator-label">Documentos</div>
     </div>
     <div class="indicator">
-      <div class="indicator-num energia">1</div>
+      <div class="indicator-num energia">5</div>
       <div class="indicator-label">Energía</div>
     </div>
     <div class="indicator">
-      <div class="indicator-num movilidad">9</div>
+      <div class="indicator-num movilidad">10</div>
       <div class="indicator-label">Movilidad</div>
     </div>
     <div class="indicator">
-      <div class="indicator-num">5</div>
+      <div class="indicator-num">14</div>
       <div class="indicator-label">Aprobados</div>
     </div>
     <div class="indicator">
-      <div class="indicator-num">5</div>
+      <div class="indicator-num">6</div>
       <div class="indicator-label">Subtemas</div>
     </div>
   </div>
@@ -290,7 +290,7 @@ footer a:hover{text-decoration:underline}
     </div>
     <div class="chart-card">
       <div class="chart-title">Tipo de acto legislativo</div>
-      <div class="chart-subtitle">Distribución de los 10 documentos</div>
+      <div class="chart-subtitle">Distribución de los 15 documentos</div>
       <div class="chart-wrap" style="max-width:320px;margin:0 auto"><canvas id="chartTipo"></canvas></div>
     </div>
     <div class="chart-card">
@@ -310,7 +310,7 @@ footer a:hover{text-decoration:underline}
 <section class="section" id="registro">
   <div class="section-header">
     <h2 class="section-title">Registro legislativo</h2>
-    <p class="section-desc">Explora los 10 documentos clasificados</p>
+    <p class="section-desc">Explora los 15 documentos clasificados</p>
   </div>
 
   <button class="filter-toggle-btn" onclick="document.querySelector('.filters-bar').classList.toggle('open')">
@@ -351,7 +351,7 @@ footer a:hover{text-decoration:underline}
         <option value="">Todos</option>
         <option>Aprobada</option>
         <option>Aprobado</option>
-        <option>Turnada a comisiones</option>
+        <option>En comisión</option>
       </select>
     </div>
     <div class="search-box">
@@ -428,7 +428,7 @@ function badgeClass(type,val){
   const map={
     macrotema:{Energía:'badge-energia',Movilidad:'badge-movilidad'},
     tipo_acto:{'Reforma legislativa':'badge-reforma','Punto de Acuerdo':'badge-punto',Dictamen:'badge-dictamen',Minuta:'badge-minuta'},
-    estatus:{Aprobada:'badge-aprobada',Aprobado:'badge-aprobada','Turnada a comisiones':'badge-en-comision'}
+    estatus:{Aprobada:'badge-aprobada',Aprobado:'badge-aprobada','En comisión':'badge-en-comision','Turnada a comisiones':'badge-en-comision'}
   };
   return(map[type]&&map[type][val])||'';
 }
@@ -519,7 +519,7 @@ Chart.defaults.plugins.legend.display=false;
 
 // 4. Grouped estatus
 (function(){
-  const estatuses=['Aprobada','Aprobado','Turnada a comisiones'];
+  const estatuses=['Aprobada','Aprobado','En comisión'];
   const ene=[],mov=[];
   estatuses.forEach(e=>{
     ene.push(DATA.filter(d=>d.macrotema==='Energía'&&d.estatus===e).length);

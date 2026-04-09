@@ -240,3 +240,16 @@ const DATA = [
     "estado": "Guerrero"
   }
 ];
+
+const SUBTEMAS = {
+  "ENE_GEN": "Generación y transición energética",
+  "ENE_REG": "Marco regulatorio energético",
+  "ENE_TAR": "Tarifas, subsidios y cortes de suministro",
+  "ENE_HC": "Hidrocarburos, gas y combustibles",
+  "ENE_EF": "Eficiencia energética y alumbrado",
+  "MOV_SEG": "Seguridad vial",
+  "MOV_INF": "Infraestructura vial",
+  "MOV_ACT": "Movilidad activa",
+  "MOV_TP": "Transporte público y concesiones",
+  "MOV_ELEC": "Electromovilidad y vehículos eléctricos"
+};
