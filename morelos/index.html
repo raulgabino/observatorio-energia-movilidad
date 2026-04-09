@@ -516,7 +516,9 @@ Chart.defaults.plugins.legend.display=false;
 
 // 4. Grouped estatus
 (function(){
-  const estatuses=['Presentada','En comisión','Aprobada','Estancada'];
+  const estatusSet=new Set();
+  DATA.forEach(d=>{if(d.estatus)estatusSet.add(d.estatus)});
+  const estatuses=[...estatusSet];
   const ene=[],mov=[];
   estatuses.forEach(e=>{
     ene.push(DATA.filter(d=>d.macrotema==='Energía'&&d.estatus===e).length);
